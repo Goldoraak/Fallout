@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+
+		<div class="container">
+			<h2>Algorithme de piratage de terminaux Fallout</h2>
+
+			<!-- FORMULAIRE CHOIX DU NOMBRE DE MOTS -->
+			<form id="form-nb-words" class="form-horizontal" action="#" method="POST">
+				<fieldset>
+  					<legend>Etape 1</legend>
+					<div class="form-group">
+						<label for="nb-words" class="col-sm-5 control-label">Nombre de mots</label>
+						<div class="col-sm-2">
+							<input type="number" name="nb-words" id="nb-words" class="form-control" autocomplete="off" />
+						</div>
+					</div>
+
+					<div class="form-group">
+					    <div class="col-sm-offset-5 col-sm-2">
+					      	<button type="submit" class="btn btn-primary">Valider</button>
+					    </div>
+					</div>
+					
+				</fieldset>
+			</form>
+
+			<div class="row">
+
+				<!-- FORMULAIRE DE SAISIE DES MOTS -->
+				<div class="col-md-6">
+					<form id="form-words">
+					</form>
+				</div>
+
+				<!-- FORMULAIRE SAISIE DU NOMBRE DE SIMILARITES ET AFFICHAGE RESULTAT FINAL -->
+				<div class="col-md-6">
+					<form id="form-result" class="form-horizontal">
+						<fieldset>
+  							<legend>Tentative <span class="iteration-number"></span></legend>
+  							<div class="alert alert-info" role="alert">
+  								Proposition : <span id="result"></span>
+  							</div>
+							<div class="form-group">
+								<label for="nb-match" class="col-sm-6 control-label">Nombre de lettres similaires</label>
+								<div class="col-sm-4">
+									<input type="number" name="nb-match" id="nb-match" class="form-control" autocomplete="off" />
+								</div>
+							</div>
+
+							<div class="form-group">
+							    <div class="col-sm-offset-6 col-sm-4">
+							      	<button type="submit" class="btn btn-primary">Valider</button>
+							    </div>
+							</div>
+						</fieldset>
+					</form>
+
+					<div id="result-box" class="alert alert-success" role="alert">
+						Le mot de passe est : <span id="result-word"></span>. Trouvé en <span class="iteration-number"></span> tentatives</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+</html>

@@ -1,0 +1,9 @@
+#form-result, #result-box
+{
+	display: none;
+}
+
+button
+{
+	width: 100%;
+}
